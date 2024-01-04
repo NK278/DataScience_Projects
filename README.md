@@ -153,3 +153,83 @@ Set up your MongoDB Atlas connection by replacing the MongoDB connection string 
 Feel free to open issues or contribute to the project by submitting pull requests. Your feedback and contributions are welcome!
 
 ---
+
+
+
+---
+
+# Project 3:  Flask YouTube Data Scraper
+
+This Flask application uses the YouTube API to fetch data from a specific YouTube channel, stores it in a CSV file, and then displays the data on a webpage. The application provides a simple interface to showcase YouTube video details.
+
+## Getting Started
+
+### Prerequisites
+
+Make sure you have the following dependencies installed:
+
+- Flask
+- google-api-python-client
+- google-auth
+- google-auth-oauthlib
+- google-auth-httplib2
+
+You can install them using the following command:
+
+```bash
+pip install -r requirements.txt
+```
+
+### YouTube API Key Setup
+
+1. Create a project on the Google Cloud Console (https://console.developers.google.com/).
+2. Enable the YouTube Data API v3 for your project.
+3. Create API credentials (API key) for your project.
+
+### Running the Application
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/yourusername/your-repo.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd your-repo
+   ```
+
+3. Run the Flask application:
+
+   ```bash
+   python your_app_file.py
+   ```
+
+   Replace `your_app_file.py` with the name of your Flask application file.
+
+4. Open your web browser and go to [http://localhost:5000/](http://localhost:5000/) to access the application.
+
+## Usage
+
+1. The application fetches YouTube data (title, published date, thumbnails, and views) from a specific channel using the YouTube API.
+
+2. The data is stored in a CSV file named `youtube_data.csv`.
+
+3. The application then reads the CSV file and displays the YouTube data on the homepage.
+
+## Features
+
+- **YouTube Data Fetching:** Fetches data from a specific YouTube channel using the YouTube API.
+
+- **CSV Storage:** Stores the fetched data in a CSV file for future reference.
+
+- **Webpage Display:** Displays the YouTube data on a simple webpage.
+
+- **Error Logging:** Logs any errors encountered during the process in the `scrapper.log` file.
+
+## Issues and Contributions
+
+Feel free to open issues or contribute to the project by submitting pull requests. Your feedback and contributions are welcome!
+
+---
